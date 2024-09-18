@@ -16,17 +16,16 @@ Please clone the following repositories:
 git clone https://github.com/karabomaila/3D-CAT-Net.git
 ```
 
-### Requirement
-```
-pip install -r requirements.txt
-```
+### Requirements
+1. create a virtual environment: ```python3 -m venv .venv``` and activate it ```. .venv/bin/activate```
+2. ```pip install -r requirements.txt```
 
 ### Data preparation
 #### Download
 1. **Abdominal MRI**  [Combined Healthy Abdominal Organ Segmentation dataset](https://chaos.grand-challenge.org/)  
 
 #### Pre-processing
-Please refer to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation.git)
+Please refer to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation.git) and also there is code in the 'utils' folder taken from their repo for pre-processing the images.
 
 ### Training
 1. Download pre-trained [ResNet-50 weights](https://drive.google.com/file/d/13tnSvXY7oDIEloNFiGTsjUIYfS3g3BfG/view?usp=sharing) and put into your own backbone folder.
@@ -36,7 +35,7 @@ sh ./exps/train_Abd.sh
 ```
 
 ### Testing
-Run `./exp/validation.sh`
+Run `./exp/test.sh`
 
 ### Visualization
 <!-- [comment]: <> ()
