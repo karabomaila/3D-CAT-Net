@@ -1,0 +1,7 @@
+/.venv
+/data
+*.pyc
+/exps_on_CHAOST2
+.env
+/runs
+/results
